@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Formulir Pendaftaran Donor Darah STTB</title>
+    </head>
+    <body>
+        <center><h1>Selamat Datang</h1></center>
+        <img src="images/darah.png" width="200" height="150" style="display:block; margin: auto;"/>
+        <h3>Silahkan Mengisi Formulir Pendaftaran Donor Darah STTB</h3>
+        <form action="modifikasiweb.html" method="get">
+            <fieldset>
+                <legend>Formulir Pendaftaran Donor Darah STTB</legend>
+                <!--Text Field-->
+                <p>
+                    <label>Nama Lengkap &emsp;: </label>
+                    <input type="text"
+                    name="namaLengkap"
+                    placeholder="Inputkan nama lengkap"/>
+                </p>
+                <p>
+                    <label>Nama Panggilan &ensp;: </label>
+                    <input type="text"
+                    name="namapanggilan"
+                    placeholder="Inputkan nama panggilan"/>
+                </p>
+                <p>
+                    <label>NPM &emsp; &emsp; &emsp; &nbsp; &nbsp; &nbsp;: </label>
+                    <input type="number"
+                    name="npm"
+                    placeholder="Inputkan NPM"/>
+                </p>
+                <!--Dropdown-->
+                <p>
+                    <label>Prodi &emsp; &emsp; &emsp; &nbsp; &nbsp; &nbsp;:</label>
+                    <select name="prodi">
+                        <option value="teknikIndustri">Teknik Industri</option>
+                        <option value="teknikInformatika">Teknik Informatika</option>
+                        <option value="desainkomunikasiVisual">Desain Komunikasi Visual</option>
+                    </select>
+                </p>
+                <!--Dropdown-->
+                <p>
+                    <label>Jenis Kelamin&emsp;&nbsp;&nbsp;&nbsp;:</label>
+                    <select name="jenisKelamin">
+                        <option value="lakilaki">Laki-Laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </p>
+                <!--Radio Button-->
+                <label>Golongan Darah&ensp;&nbsp;:</label>
+                <input type="radio" name="golonganDarah" value="A"/>A
+                <input type="radio" name="golonganDarah" value="B"/>B
+                <input type="radio" name="golonganDarah" value="AB"/>AB
+                <input type="radio" name="golonganDarah" value="O"/>O
+                <input type="radio" name="golonganDarah" value="tidaktahu"/>(Tidak Tahu)
+                <!--Text Field-->
+                <p>
+                    <label>Apa yang anda ketahui tentang donor darah ?</label>
+                    <p>
+                    <input type="text"
+                    name="pengetahuanDonor"
+                    placeholder="Input disini"/>
+                </p>
+                </p>
+                <!--Checkbox-->
+                <p>Apakah anda pernah mengikuti donor darah sebelumnya ?</p>
+                <input type="checkbox" name="pernahDonor" value="pernah"/>Pernah
+                <input type="checkbox" name="pernahDonor" value="tidak"/>Tidak
+                <!--Text Field-->
+                 <p>
+                    <label>Jika "Belum" , Mengapa?</label>
+                    <p>
+                    <input type="text"
+                    name="pengetahuanDonor2"
+                    placeholder="Input disini"/>
+                 </p>
+                 <p>
+                    <label>Seberapa penting donor darah menurut anda ?</label>
+                    <p>
+                    <input type="text"
+                    name="pengetahuanDonor3"
+                    placeholder="Input disini"/>
+                 </p>
+                <!--Radio Button-->
+                <label>Apakah anda berminat mengikuti kegiatan donor darah ?</label>
+                <p><input type="radio" name="pernyataanDonor" value="iya"/>Iya</p>
+                <p><input type="radio" name="pernyataanDonor" value="tidak"/>Tidak</p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Batal">
+            </fieldset>
+        </form>
+        <p><b>Perhatian!!!</b>Data yang telah diisi adalah sudah benar dan merupakan data yang sebenarnya.
+            Pilih dengan mengklik "Submit" atau "Batal".
+        </p>
+        <p>Terimakasih</p>
+    </body>
+</html>
